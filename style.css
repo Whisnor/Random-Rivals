@@ -236,7 +236,7 @@ body {
   .custom-checkbox {
     font-size: 1rem;
     gap: 8px;
-    margin-bottom: 90px;
+    margin-bottom: 5px;
   }
 
   #eliminationCount {
