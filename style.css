@@ -212,6 +212,7 @@ body {
   }
 
   #heroBox {
+    margin-top: 0px;
     padding: 8px;
     min-width: auto;
   }
