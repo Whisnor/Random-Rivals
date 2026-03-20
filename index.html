@@ -70,9 +70,16 @@
 
       hero.textContent = chosenHero;
 
-      const fileName = `${chosenHero} Deluxe Avatar.png`;
-      heroImg.src = `images/${fileName}`;
+      const fileNameBase = `${chosenHero} Deluxe Avatar`;
+
+      heroImg.src = `images/${fileNameBase}.png`;
       heroImg.alt = chosenHero;
+
+      heroImg.onerror = () => {
+        heroImg.onerror = null;
+        heroImg.src = `images/${fileNameBase}.webp`;
+      };
+
       heroImg.style.display = "block";
       heroBox.style.display = "flex";
 
